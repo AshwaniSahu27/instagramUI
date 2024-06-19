@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+
+}
+
+/* --------------------- Left Section Styling ------------------ */
+
+.left-section {
+    width: 230px;
+    border-right: 1px solid rgb(49, 47, 47);
+    padding: 22px;
+    color: white;
+    position: fixed;
+}
+
+.logo {
+    width: 100%;
+    height: 100px;
+    padding: 20px 0px 0px 0px;
+}
+
+.logo img {
+    filter: invert();
+}
+
+.logo i {
+    font-size: 30px;
+    color: #cbc6c6;
+    display: none;
+}
+
+.header-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+
+}
+
+.list-style-add {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.list-style-add p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.list-style-add i {
+    font-size: 25px;
+}
+
+.list-style-add img {
+    filter: invert();
+}
+
+.profile .prof {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.prof img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: invert();
+}
+
+/* -------------------- Middle Section Styling ------------  */
+
+.middle-section {
+    width: 650px;
+    margin-left: 238px;
+    position: relative;
+}
+.stories {
+    width: 88%;
+    height: 120px;
+    margin: auto;
+    padding-left: 5px;
+    padding-top: 30px;
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+/* Styles for the scrollbar */
+.stories {
+    overflow-x: scroll;
+    scrollbar-width: thin; 
+    scrollbar-color: rgba(155, 155, 155, 0.5) transparent; 
+  }
+  
+ 
+  .stories::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .stories::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  .stories::-webkit-scrollbar-thumb {
+    background-color: rgba(155, 155, 155, 0.5);
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  .stories::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(155, 155, 155, 0.7);
+  }
+
+.story {
+    min-width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 34, 0);
+    /* border-image: linear-gradient(yellow,blue);
+    clip-path: inset(0 round); */
+    overflow: hidden;
+    margin: 0px 8px;
+}
+.left-btn {
+    position: absolute;
+    top: 50px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: none;
+}
+.right-btn {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    width: 25px;
+    height: 25px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: none;
+}
+
+.right-btn i,
+.left-btn i {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.story img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.posts {
+    padding: 0px 80px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --------------------------- */
+.user-info-one {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid rgb(169, 7, 7);
+    overflow: hidden;
+}
+
+.user-info-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-info-one-paras {
+    width: 400px;
+}
+
+.user-info-one-para2 {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.dotdot img {
+    filter: invert();
+}
+
+
+/* -------------------------- */
+
+.user-post {
+    width: 100%;
+    height: 500px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.user-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* -------------------------- */
+
+.user-post-data {
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    gap: 10px;
+}
+
+.user-post-data-one {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.user-post-data-one1 {
+    display: flex;
+    gap: 15px;
+}
+
+.user-post-data-one i {
+    font-size: 25px;
+    color: rgb(194, 189, 189);
+}
+
+.user-post-data-four a {
+    text-decoration: none;
+    color: rgb(179, 176, 176);
+}
+
+.user-post-data-five input {
+    background-color: black;
+    outline: none;
+    border: none;
+
+}
+
+
+
+
+/* ---------------------- Right Section Styling -------------------- */
+
+.right-section {
+    width: 400px;
+    border-left: 1px solid rgb(69, 66, 66);
+    padding: 30px 10px 0px 20px;
+
+}
+
+.right-section-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-section-head-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.right-section-head-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-section-head-paras {
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.right-section-head-para2 {
+    font-size: 12px;
+    font-weight: 100;
+    color: gray;
+}
+
+.switch a {
+    text-decoration: none;
+    color: rgb(20, 98, 200);
+
+}
+
+/* -------------------------- */
+
+
+.right-section-para {
+    display: flex;
+    margin-top: 40px;
+}
+
+.right-section-para p {
+    color: gray;
+    width: 82%;
+}
+
+.right-section-para a {
+    color: rgb(16, 91, 182);
+    text-decoration: none;
+}
+
+
+/* ------------------------- */
+
+
+.right-section-footer {
+    width: 100%;
+    height: 300px;
+
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* ----------------------- Hovering on UsersAccount ------------------ */
+
+.dailog-box {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border: 1px solid rgb(105, 102, 102);
+    border-radius: 10px;
+    top: 200px;
+    left: 300px;
+    background-color: black;
+    box-shadow: 0 0 10px 0px white;
+    display: none;
+
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .main {
+        display: flex;
+    }
+
+    .left-section {
+        width: 60px;
+        overflow: hidden;
+        padding-left: 8px;
+    }
+
+    .middle-section {
+        margin-left: 80px;
+        width: 600px;
+        overflow: hidden;
+    }
+
+    .right-section {
+        width: 300px;
+        padding: 30px 10px 0px 20px;
+    }
+
+    .logo {
+        padding-left: 10px;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .logo i {
+        display: block;
+    }
+
+    .user-info-one-paras {
+        width: 80%;
+    }
+
+    .posts {
+        padding: 0px 40px;
+    }
+
+}
+
+@media (max-width:800px) {
+    .right-section {
+        display: none;
+    }
+
+    .left-section {
+        width: 90px;
+        overflow: hidden;
+        padding-left: 28px;
+
+    }
+
+    .list-style-add {
+        gap: 30px;
+    }
+
+    .middle-section {
+        margin-left: 100px;
+        width: 650px;
+        overflow: hidden;
+    }
+
+    .posts {
+        padding: 0px 80px;
+    }
+}
+
+@media (max-width:450px) {
+    .left-section {
+        display: none;
+    }
+
+    .middle-section {
+        margin: 0px;
+
+    }
+
+    .posts {
+        padding: 0px;
+    }
+    .right-btn, .left-btn{
+        display: none;
+    }
+}
+
+@media (min-width:1000px) {
+
+    .list-style-add:hover {
+        background-color: #212121;
+        border-radius: 10px;
+        transform: translateX(-10px);
+        transition: all 0.2s;
+    }
+}
